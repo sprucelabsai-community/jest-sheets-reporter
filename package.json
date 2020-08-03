@@ -21,8 +21,9 @@
     "url": "https://github.com/sprucelabsai/jest-sheets-reporter/issues"
   },
   "scripts": {
-    "build": "npm run clean && npm run build.ts",
+    "build": "yarn run clean && yarn run build.ts",
     "build.ts": "tsc",
+    "build.watch":"chokidar src/* -c 'yarn run build'",
     "clean": "rm -rf build/",
     "lint": "eslint '**/*.ts' && tsc -p . --noEmit",
     "lint.fix": "eslint --fix '**/*.ts'",
@@ -30,9 +31,7 @@
     "test.watch": "jest --watch",
     "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
     "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
-    "release": "semantic-release",
-    "upgrade.base": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
-    "up": "yarn upgrade.base && yarn lint && yarn build && yarn test"
+    "release": "semantic-release"
   },
   "dependencies": {
     "google-spreadsheet": "^3.0.11"
