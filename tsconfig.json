@@ -14,10 +14,8 @@
 		"moduleResolution": "node",
 		"sourceMap": true,
 		"outDir": "build",
-		"baseUrl": ".",
-		"paths": {
-			"*": ["node_modules/*"]
-		}
+		"baseUrl": "src",
+		"experimentalDecorators": true
 	},
 	"include": ["./*.ts", "./**/*.ts"],
 	"exclude": ["**/node_modules/*", "build/*"]
