@@ -24,6 +24,7 @@ jobs:
             [ -n "$BASE64_ENV" ] && echo $BASE64_ENV | base64 --decode > .env
       - run: yarn install --frozen-lockfile
       - run: yarn lint
+      - run: yarn build
       - run: yarn test
       - run:
           name: Check branch for auto-upgrade
