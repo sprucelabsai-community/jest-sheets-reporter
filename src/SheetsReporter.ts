@@ -26,7 +26,6 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 		try {
 			this.adapter = new AdapterClass()
 		} catch (err) {
-
 			throw new Error(
 				`Failed to load the SheetsAdapter at ${adapterPath}. Make sure the path is relative process.cwd() or absolute and it's being exported as default. Original error: ${err.stack}`
 			)
