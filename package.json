@@ -55,6 +55,7 @@
     "typescript": "^3.9.7"
   },
   "jest": {
+    "testTimeout": 300000,
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/tmp/",
