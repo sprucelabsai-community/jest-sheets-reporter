@@ -32,8 +32,8 @@
     "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
     "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
     "release": "semantic-release",
-    "upgrade.base": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
-    "up": "yarn upgrade.base && yarn lint && yarn build && yarn test"
+    "upgrade.packages": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
+    "upgrade.packages.test": "yarn upgrade.base && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "google-spreadsheet": "^3.0.11"
