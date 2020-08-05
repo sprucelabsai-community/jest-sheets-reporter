@@ -26,8 +26,13 @@ export class SheetsReporterUtility {
 	}
 
 	public static resolveAdapterPath(adapterFilepath?: string) {
-		const filePath =
-			adapterFilepath ?? process.env.SHEETS_REPORTER_ADAPTER ?? 'GoogleAdapter'
+		const filePath = adapterFilepath ?? process.env.SHEETS_REPORTER_ADAPTER
+
+		if (!filePath) {
+			throw new Error(
+				`SheetsReporter has no adapter set, try adding SHEETS_REPORTER_ADAPTER="MockAdapter" or SHEETS_REPORTER_ADAPTER="GoogleAdapter" to your env.`
+			)
+		}
 
 		const basePath =
 			filePath.search(new RegExp(pathUtil.sep)) > -1
