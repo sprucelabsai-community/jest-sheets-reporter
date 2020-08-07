@@ -1332,10 +1332,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^5.3.112":
-  version "5.3.112"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-5.3.112.tgz#14dee406b94685fd1f8872c1b61f72d632824848"
-  integrity sha512-BnC2+DMHkfDjBVu3/u4Ap2KWzhyC3UFm7yfhPmY1DeijmBhHOOmDNc4n9v2zNexPbKQoCMffVWEdxdSu3xozEw==
+"@sprucelabs/test@^5.3.113":
+  version "5.3.113"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-5.3.113.tgz#c1d4d7dc4668839b1ebaf983d19f99a769e35df9"
+  integrity sha512-SzFfZ8ZH9T1avgY3BmtmWvM/fh9TrMMrdgZ0tf1vwYCinfJ1/ZggfPUwFkRglO1C3Jbgwy++cH+5k6XG12zYVw==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/preset-env" "^7.11.0"
@@ -2606,10 +2606,10 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^5.0.2:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-5.2.0.tgz#ead55121d08a0fc817085584c123cedec2e08975"
-  integrity sha512-XxcDbQ4/43d6CxR7+iV8IZXhur4KbmEJk1CetVMUqCy34z9l0DkszbY+/9wvmSnToTej0SYomc2WSRH+L0zVJw==
+concurrently@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-5.3.0.tgz#7500de6410d043c912b2da27de3202cb489b1e7b"
+  integrity sha512-8MhqOB6PWlBfA2vJ8a0bSFKATOdWlHiQlk11IfmQBPaHVP8oP2gsh2MObE6UR3hqDHqvaIvLTyceNW6obVuFHQ==
   dependencies:
     chalk "^2.4.2"
     date-fns "^2.0.1"
