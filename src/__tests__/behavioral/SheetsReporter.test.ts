@@ -70,8 +70,8 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 		const cliTest = results.map((r) => r.title === 'canBootCli')
 		const canSyncTest = results.map((r) => r.title === 'canSyncSchemas')
 
-		assert.isOk(cliTest)
-		assert.isOk(canSyncTest)
+		assert.isTruthy(cliTest)
+		assert.isTruthy(canSyncTest)
 	}
 
 	@test()
