@@ -37,7 +37,7 @@
     "upgrade.packages.test": "yarn upgrade.base && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
-    "google-spreadsheet": "^3.0.11"
+    "google-spreadsheet": "^3.0.13"
   },
   "devDependencies": {
     "@sprucelabs/semantic-release": "^4.0.4",
