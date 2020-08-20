@@ -1407,10 +1407,10 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/google-spreadsheet@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.0.0.tgz#b3243e2733847fd03651c95726c211a6ac6f3860"
-  integrity sha512-BMsoo/J2yshaLBsMxW/o6Py8rBdDeFHUWQ18Z/WoD8VDBGzsdcNVXMObBxL4szj0FbnSiaqUJ9paJYXMr+GhhQ==
+"@types/google-spreadsheet@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.0.1.tgz#0039dcdde826b8b030049d0a49107bfc7da4e746"
+  integrity sha512-JYBEoUZF9oxR7nE90kxCJyD9B0nRHjOeOrjWRYr37bXvs4EAk2l/sAq8CJv7wdco6WcHcLbR7emNNVOVQu8zLw==
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.3"
