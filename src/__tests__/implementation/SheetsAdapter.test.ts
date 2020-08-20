@@ -16,7 +16,7 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
 	private static worksheetId: number
 
 	protected static async beforeEach() {
-		super.beforeEach()
+		await super.beforeEach()
 
 		const email = process.env.GOOGLE_SERVICE_EMAIL_TEST as string
 		const key = process.env.GOOGLE_SERVICE_PRIVATE_KEY_TEST as string
