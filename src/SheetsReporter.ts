@@ -45,8 +45,10 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 
 		for (const test of filteredTests) {
 			if (test.status === 'passed') {
+				// eslint-disable-next-line @typescript-eslint/no-floating-promises
 				this.reportTestAsPassed(test.title)
 			} else {
+				// eslint-disable-next-line @typescript-eslint/no-floating-promises
 				this.reportTestAsFailed(test.title)
 			}
 		}
