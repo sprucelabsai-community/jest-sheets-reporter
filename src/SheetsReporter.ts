@@ -15,6 +15,7 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 	private testMap: TestMap
 	private sheetId: string
 	private worksheetId: number
+	private errors: Error[] = []
 
 	public constructor(_: any, options: ISheetsReporterOptions<TestMap>) {
 		const adapterPath = SheetsReporterUtility.resolveAdapterPath(
@@ -74,11 +75,20 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 			)
 		}
 		const cell = this.testMap[testName]
-		await this.adapter.updateCell({
-			sheetId: this.sheetId,
-			worksheetId: this.worksheetId,
-			cell,
-			value: status === 'passed' ? 1 : 0,
-		})
+		try {
+			await this.adapter.updateCell({
+				sheetId: this.sheetId,
+				worksheetId: this.worksheetId,
+				cell,
+				value: status === 'passed' ? 1 : 0,
+			})
+		} catch (err) {
+			console.log('Caught sheets reporter error', err)
+			this.errors.push(err)
+		}
+	}
+
+	public getLastError() {
+		return this.errors[this.errors.length - 1]
 	}
 }
