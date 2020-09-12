@@ -47,7 +47,7 @@
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-config-spruce": "^10.9.42",
     "jest": "^26.4.2",
     "jest-reporters": "^0.0.2",
