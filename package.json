@@ -37,12 +37,12 @@
     "upgrade.packages.test": "yarn upgrade.base && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
-	"google-spreadsheet": "^3.0.13",
-	"dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "google-spreadsheet": "^3.0.13"
   },
   "devDependencies": {
     "@sprucelabs/semantic-release": "^4.0.5",
-    "@sprucelabs/test": "^7.0.46",
+    "@sprucelabs/test": "^7.0.47",
     "@types/google-spreadsheet": "^3.0.1",
     "arkit": "^1.6.4",
     "chokidar-cli": "^2.1.0",
