@@ -4,7 +4,7 @@ Update a Google Sheet when your tests pass or fail.
 
 <img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/overview.png">
 
-## Example Jest Config
+## Example Jest config
 
 ```json
 "jest": {
