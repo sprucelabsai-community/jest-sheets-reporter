@@ -41,7 +41,7 @@
 	"dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "@sprucelabs/semantic-release": "^4.0.4",
+    "@sprucelabs/semantic-release": "^4.0.5",
     "@sprucelabs/test": "^7.0.46",
     "@types/google-spreadsheet": "^3.0.1",
     "arkit": "^1.6.4",

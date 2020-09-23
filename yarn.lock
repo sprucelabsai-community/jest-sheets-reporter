@@ -1336,7 +1336,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@sprucelabs/semantic-release@^4.0.4":
+"@sprucelabs/semantic-release@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@sprucelabs/semantic-release/-/semantic-release-4.0.5.tgz#7fbbe98cb94e00bb2b65857ee15ffdd1bab7ceca"
   integrity sha512-gmwfAmwM02/V9pre6O8S3qxPQLpF0dhms/UF/8DAkKBhQEEbvdYUJxETrEbgee/5yPmE+P4zWBvqeKjbfIWAMA==
