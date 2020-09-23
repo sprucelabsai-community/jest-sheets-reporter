@@ -2,7 +2,7 @@
 
 Update a Google Sheet when your tests pass or fail.
 
-<img src="https://raw.githubusercontent.com/sprucelabsai/docs/images/overview.png">
+<img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/overview.png">
 
 ## Example Jest Config
 
@@ -41,8 +41,8 @@ If a test fails, the cell is set to 0.
 
 You can change the look of a cell by using conditional formatting:
 
-<img src="https://raw.githubusercontent.com/sprucelabsai/docs/images/conditional.png">
+<img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/conditional.png">
 
 Then we set the background and the text color based on the value being exactly `1` or `0`.
 
-<img src="https://raw.githubusercontent.com/sprucelabsai/docs/images/stylerules.png">
+<img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/stylerules.png">
