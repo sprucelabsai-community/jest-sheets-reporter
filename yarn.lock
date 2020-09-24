@@ -1346,10 +1346,10 @@
     conventional-changelog-sprucelabs "^1.1.0"
     semantic-release "^17.0.4"
 
-"@sprucelabs/test@^7.0.54":
-  version "7.0.54"
-  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.54.tgz#378bf1c68c8fd0403ee98d8fdd9f4947bc16a869"
-  integrity sha512-xEhMU/36Q5aZW16L9r4pTazrMNBBjX1EnijCdrFyLuSXHv92lMRsobXHJjLjm2SLlP6v3ajDaJjzlEP2pXpnUw==
+"@sprucelabs/test@^7.0.55":
+  version "7.0.55"
+  resolved "https://registry.yarnpkg.com/@sprucelabs/test/-/test-7.0.55.tgz#42193ed17a13e35b4bd07ba92c007f5780e8dbb3"
+  integrity sha512-V3bP2SK5lrrIPLQzZFY75zNFWxBnGNt4zYaF38mgeycgeLQGxIG+Y4Zm+2HnM5irW2vFJT+UtzNC9tiYcDFVjw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.5"
@@ -1399,9 +1399,9 @@
     "@babel/types" "^7.0.0"
 
 "@types/babel__template@*":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@types/babel__template/-/babel__template-7.0.2.tgz#4ff63d6b52eddac1de7b975a5223ed32ecea9307"
-  integrity sha512-/K6zCpeW7Imzgab2bLkLEbz0+1JlFSrUMdw7KoIIu+IUdu51GWaBZpd3y1VXGVXzynvGa4DaIaxNZHiON3GXUg==
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@types/babel__template/-/babel__template-7.0.3.tgz#b8aaeba0a45caca7b56a5de9459872dde3727214"
+  integrity sha512-uCoznIPDmnickEi6D0v11SBpW0OuVqHJCa7syXqQHy5uktSCreIlt0iglsCnmvz8yCb38hGcWeseA8cWJSwv5Q==
   dependencies:
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
