@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
-  "description": "A jest sheets reporter adapter",
+  "description": "Have your Jest tests update a Google Spreadsheet™®©. 📡",
   "keywords": [
     "node",
     "components",
