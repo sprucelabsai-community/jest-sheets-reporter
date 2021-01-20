@@ -32,23 +32,24 @@
     "arkit": "arkit -f index.ts -o docs/images/arkit.svg",
     "arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
     "release": "semantic-release",
-    "upgrade.packages": "yarn upgrade --latest && rm yarn.lock | true && yarn | true && yarn lint.fix | true",
+    "upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn lint.fix | true",
     "upgrade.packages.all": "yarn install && yarn upgrade.packages",
-    "upgrade.packages.test": "yarn upgrade.base && yarn lint && yarn build && yarn test"
+    "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "google-spreadsheet": "^3.0.13"
+    "google-spreadsheet": "^3.0.13",
+    "yarn-upgrade-all": "^0.5.4"
   },
   "devDependencies": {
-    "@sprucelabs/semantic-release": "^4.0.6",
-    "@sprucelabs/test": "^7.2.0",
+    "@sprucelabs/semantic-release": "latest",
+    "@sprucelabs/test": "latest",
     "@types/google-spreadsheet": "^3.0.1",
     "arkit": "^1.6.4",
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.3.0",
     "eslint": "^7.11.0",
-    "eslint-config-spruce": "^10.9.92",
+    "eslint-config-spruce": "latest",
     "jest": "^26.5.2",
     "jest-reporters": "^0.0.2",
     "prettier": "^2.1.2",
@@ -70,5 +71,12 @@
       "^#spruce/schemas/fields/(.*)": "<rootDir>/node_modules/@sprucelabs/schema/build/.spruce/schemas/fields/$1",
       "^#spruce/(.*)$": "<rootDir>/build/.spruce/$1"
     }
+  },
+  "yarn-upgrade-all": {
+    "ignore": [
+      "@sprucelabs/semantic-release",
+      "@sprucelabs/test",
+      "eslint-config-spruce"
+    ]
   }
 }
