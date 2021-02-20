@@ -47,7 +47,7 @@
     "@types/google-spreadsheet": "^3.0.2",
     "arkit": "^1.6.4",
     "chokidar-cli": "^2.1.0",
-    "concurrently": "^5.3.0",
+    "concurrently": "^6.0.0",
     "eslint": "^7.20.0",
     "eslint-config-spruce": "latest",
     "jest": "^26.6.3",
