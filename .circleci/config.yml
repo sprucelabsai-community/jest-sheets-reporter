@@ -24,7 +24,7 @@ jobs:
             [ -n "$BASE64_ENV" ] && echo $BASE64_ENV | base64 --decode > .env
       - run: yarn install
       - run: yarn lint
-      - run: yarn build
+      - run: yarn build.dev
       - run: yarn test
       - run:
           name: Check branch for auto-upgrade
@@ -59,7 +59,7 @@ jobs:
               circleci-agent step halt
             fi
       - run: yarn install
-      - run: yarn run build
+      - run: yarn build.dist
       - run: git config --global user.email "$GIT_AUTHOR_EMAIL"
       - run: git config --global user.name "$GIT_AUTHOR_NAME"
       - run: yarn run release
