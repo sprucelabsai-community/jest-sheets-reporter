@@ -3,9 +3,8 @@ import SheetsReporterGoogleAdapter from './GoogleAdapter'
 export default class SheetsReporterTestAdapter extends SheetsReporterGoogleAdapter {
 	private randomCount = 0
 
-
 	public constructor() {
-		super({ serviceEmail: 'not-needed@nothing.com', privateKey: 'nothing'})
+		super({ serviceEmail: 'not-needed@nothing.com', privateKey: 'nothing' })
 	}
 
 	public async fetchCellValue(
