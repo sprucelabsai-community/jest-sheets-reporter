@@ -2,6 +2,11 @@ import SheetsReporterTestAdapter from './TestAdapter'
 
 export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter {
 	private static cellCache: Record<string, string | number | boolean> = {}
+
+	public constructor() {
+		super({ serviceEmail: 'not-needed@nothing.com', privateKey: 'nothing'})
+	}
+	
 	public async updateCell(options: {
 		sheetId: string
 		worksheetId: number

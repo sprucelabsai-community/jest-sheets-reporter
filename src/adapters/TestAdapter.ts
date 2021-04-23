@@ -4,9 +4,6 @@ export default class SheetsReporterTestAdapter extends SheetsReporterGoogleAdapt
 	private randomCount = 0
 
 
-	public constructor() {
-		super({ serviceEmail: 'not-needed@nothing.com', privateKey: 'nothing'})
-	}
 
 	public async fetchCellValue(
 		sheetId: string,
