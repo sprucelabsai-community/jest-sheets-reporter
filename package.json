@@ -35,7 +35,7 @@
     "watch.build.dev": "yarn build.tsc -w"
   },
   "dependencies": {
-    "dotenv": "^8.6.0",
+    "dotenv": "^9.0.0",
     "google-spreadsheet": "^3.1.15"
   },
   "devDependencies": {
