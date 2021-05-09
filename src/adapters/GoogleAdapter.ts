@@ -5,13 +5,12 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter {
+	implements IGoogleSheetsAdapter
+{
 	private serviceEmail: string
 	private privateKey: string
-	private spreadsheetInstancesById: Record<
-		string,
-		Promise<GoogleSpreadsheet>
-	> = {}
+	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
+		{}
 
 	public constructor(options?: IGoogleSheetsOptions) {
 		const email = options
