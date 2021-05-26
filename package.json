@@ -43,7 +43,7 @@
   "devDependencies": {
     "@sprucelabs/semantic-release": "latest",
     "@sprucelabs/test": "latest",
-    "@types/google-spreadsheet": "^3.1.1",
+    "@types/google-spreadsheet": "^3.1.2",
     "eslint": "^7.27.0",
     "eslint-config-spruce": "latest",
     "jest": "^27.0.1",
