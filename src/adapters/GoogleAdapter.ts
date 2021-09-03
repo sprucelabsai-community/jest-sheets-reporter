@@ -76,6 +76,7 @@ export default class SheetsReporterGoogleAdapter
 	}
 
 	protected async fetchSpreadsheet(sheetId: string) {
+		//@ts-ignore
 		if (this.spreadsheetInstancesById[sheetId]) {
 			return this.spreadsheetInstancesById[sheetId]
 		}

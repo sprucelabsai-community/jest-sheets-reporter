@@ -26,7 +26,7 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 
 		try {
 			this.adapter = new AdapterClass()
-		} catch (err) {
+		} catch (err: any) {
 			throw new Error(
 				`Failed to load the SheetsAdapter at ${adapterPath}. Make sure the path is relative process.cwd() or absolute and it's being exported as default. Original error: ${err.stack}`
 			)
@@ -82,7 +82,7 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 				cell,
 				value: status === 'passed' ? 1 : 0,
 			})
-		} catch (err) {
+		} catch (err: any) {
 			console.log('Caught sheets reporter error', err)
 			this.errors.push(err)
 		}
