@@ -53,7 +53,7 @@
     "google-spreadsheet": "^3.1.15"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^1.0.75",
+    "@sprucelabs/resolve-path-aliases": "^1.0.76",
     "@sprucelabs/semantic-release": "^4.0.6",
     "@sprucelabs/test": "^7.7.60",
     "@types/google-spreadsheet": "^3.1.5",
