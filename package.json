@@ -53,9 +53,9 @@
     "google-spreadsheet": "^3.1.15"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^1.0.76",
+    "@sprucelabs/resolve-path-aliases": "^1.0.77",
     "@sprucelabs/semantic-release": "^4.0.6",
-    "@sprucelabs/test": "^7.7.60",
+    "@sprucelabs/test": "^7.7.61",
     "@types/google-spreadsheet": "^3.1.5",
     "@types/node": "^16.9.1",
     "chokidar-cli": "^3.0.0",
