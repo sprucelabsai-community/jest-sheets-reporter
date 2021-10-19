@@ -1,3 +1,165 @@
+## [1.2.218](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.217...v1.2.218) (2021-10-17)
+
+## [1.2.217](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.216...v1.2.217) (2021-10-17)
+
+## [1.2.216](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.215...v1.2.216) (2021-10-17)
+
+## [1.2.215](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.214...v1.2.215) (2021-10-14)
+
+## [1.2.214](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.213...v1.2.214) (2021-10-14)
+
+## [1.2.213](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.212...v1.2.213) (2021-10-14)
+
+## [1.2.212](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.211...v1.2.212) (2021-10-13)
+
+## [1.2.211](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.210...v1.2.211) (2021-10-13)
+
+## [1.2.210](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.209...v1.2.210) (2021-10-13)
+
+## [1.2.209](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.208...v1.2.209) (2021-10-13)
+
+## [1.2.208](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.207...v1.2.208) (2021-10-13)
+
+## [1.2.207](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.206...v1.2.207) (2021-10-12)
+
+## [1.2.206](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.205...v1.2.206) (2021-10-12)
+
+## [1.2.205](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.204...v1.2.205) (2021-10-12)
+
+## [1.2.204](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.203...v1.2.204) (2021-10-12)
+
+## [1.2.203](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.202...v1.2.203) (2021-10-12)
+
+## [1.2.202](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.201...v1.2.202) (2021-10-12)
+
+## [1.2.201](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.200...v1.2.201) (2021-10-08)
+
+## [1.2.200](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.199...v1.2.200) (2021-10-08)
+
+## [1.2.199](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.198...v1.2.199) (2021-10-08)
+
+## [1.2.198](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.197...v1.2.198) (2021-10-05)
+
+## [1.2.197](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.196...v1.2.197) (2021-10-05)
+
+## [1.2.196](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.195...v1.2.196) (2021-10-04)
+
+## [1.2.195](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.194...v1.2.195) (2021-10-04)
+
+## [1.2.194](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.193...v1.2.194) (2021-10-04)
+
+## [1.2.193](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.192...v1.2.193) (2021-10-04)
+
+## [1.2.192](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.191...v1.2.192) (2021-10-04)
+
+## [1.2.191](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.190...v1.2.191) (2021-10-04)
+
+## [1.2.190](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.189...v1.2.190) (2021-10-04)
+
+## [1.2.189](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.188...v1.2.189) (2021-10-04)
+
+## [1.2.188](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.187...v1.2.188) (2021-10-04)
+
+## [1.2.187](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.186...v1.2.187) (2021-10-04)
+
+## [1.2.186](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.185...v1.2.186) (2021-10-04)
+
+## [1.2.185](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.184...v1.2.185) (2021-10-04)
+
+## [1.2.184](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.183...v1.2.184) (2021-10-03)
+
+## [1.2.183](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.182...v1.2.183) (2021-10-03)
+
+## [1.2.182](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.181...v1.2.182) (2021-10-03)
+
+## [1.2.181](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.180...v1.2.181) (2021-10-03)
+
+## [1.2.180](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.179...v1.2.180) (2021-10-03)
+
+## [1.2.179](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.178...v1.2.179) (2021-10-03)
+
+## [1.2.178](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.177...v1.2.178) (2021-10-03)
+
+## [1.2.177](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.176...v1.2.177) (2021-10-03)
+
+## [1.2.176](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.175...v1.2.176) (2021-10-03)
+
+## [1.2.175](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.174...v1.2.175) (2021-10-03)
+
+## [1.2.174](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.173...v1.2.174) (2021-10-03)
+
+## [1.2.173](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.172...v1.2.173) (2021-10-03)
+
+## [1.2.172](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.171...v1.2.172) (2021-10-03)
+
+## [1.2.171](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.170...v1.2.171) (2021-10-03)
+
+## [1.2.170](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.169...v1.2.170) (2021-10-03)
+
+## [1.2.169](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.168...v1.2.169) (2021-10-03)
+
+## [1.2.168](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.167...v1.2.168) (2021-10-03)
+
+## [1.2.167](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.166...v1.2.167) (2021-10-03)
+
+## [1.2.166](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.165...v1.2.166) (2021-10-03)
+
+## [1.2.165](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.164...v1.2.165) (2021-10-03)
+
+## [1.2.164](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.163...v1.2.164) (2021-10-02)
+
+## [1.2.163](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.162...v1.2.163) (2021-10-02)
+
+## [1.2.162](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.161...v1.2.162) (2021-10-02)
+
+## [1.2.161](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.160...v1.2.161) (2021-10-02)
+
+## [1.2.160](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.159...v1.2.160) (2021-10-02)
+
+## [1.2.159](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.158...v1.2.159) (2021-10-02)
+
+## [1.2.158](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.157...v1.2.158) (2021-10-02)
+
+## [1.2.157](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.156...v1.2.157) (2021-10-02)
+
+## [1.2.156](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.155...v1.2.156) (2021-10-02)
+
+## [1.2.155](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.154...v1.2.155) (2021-10-02)
+
+## [1.2.154](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.153...v1.2.154) (2021-10-02)
+
+## [1.2.153](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.152...v1.2.153) (2021-10-02)
+
+## [1.2.152](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.151...v1.2.152) (2021-10-02)
+
+## [1.2.151](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.150...v1.2.151) (2021-10-02)
+
+## [1.2.150](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.149...v1.2.150) (2021-10-02)
+
+## [1.2.149](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.148...v1.2.149) (2021-10-02)
+
+## [1.2.148](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.147...v1.2.148) (2021-10-02)
+
+## [1.2.147](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.146...v1.2.147) (2021-10-02)
+
+## [1.2.146](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.145...v1.2.146) (2021-10-02)
+
+## [1.2.145](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.144...v1.2.145) (2021-10-01)
+
+## [1.2.144](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.143...v1.2.144) (2021-10-01)
+
+## [1.2.143](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.142...v1.2.143) (2021-10-01)
+
+## [1.2.142](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.141...v1.2.142) (2021-10-01)
+
+## [1.2.141](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.140...v1.2.141) (2021-10-01)
+
+## [1.2.140](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.139...v1.2.140) (2021-10-01)
+
+## [1.2.139](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.138...v1.2.139) (2021-10-01)
+
+## [1.2.138](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.137...v1.2.138) (2021-10-01)
+
 ## [1.2.137](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.136...v1.2.137) (2021-10-01)
 
 ## [1.2.136](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.135...v1.2.136) (2021-10-01)
