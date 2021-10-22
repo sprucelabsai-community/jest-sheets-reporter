@@ -55,9 +55,9 @@
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^1.0.218",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.206",
+    "@sprucelabs/test": "^7.7.207",
     "@types/google-spreadsheet": "^3.1.5",
-    "@types/node": "^16.11.3",
+    "@types/node": "^16.11.4",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.3.0",
     "eslint": "^8.0.1",
@@ -65,7 +65,7 @@
     "jest": "^27.3.1",
     "jest-reporters": "^0.0.2",
     "prettier": "^2.4.1",
-    "ts-node": "^10.3.1",
+    "ts-node": "^10.4.0",
     "tsc-watch": "^4.5.0",
     "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.4"
