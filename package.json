@@ -59,7 +59,7 @@
     "@types/google-spreadsheet": "^3.1.5",
     "@types/node": "^16.11.7",
     "chokidar-cli": "^3.0.0",
-    "concurrently": "^6.3.0",
+    "concurrently": "^6.4.0",
     "eslint": "^8.2.0",
     "eslint-config-spruce": "^10.10.15",
     "jest": "^27.3.1",
