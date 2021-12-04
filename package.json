@@ -6,7 +6,7 @@
   "files": [
     "build"
   ],
-  "version": "1.2.265",
+  "version": "1.2.266",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
   "description": "Have your Jest tests update a Google Spreadsheet™®©. 📡",
