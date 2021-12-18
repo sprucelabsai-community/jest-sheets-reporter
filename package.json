@@ -6,6 +6,13 @@
   "files": [
     "build"
   ],
+  "skill": {
+    "namespace": "jest-sheets-reporter",
+    "upgradeIgnoreList": [
+      "@sprucelabs/spruce-test",
+      "@sprucelabs/resolve-path-aliases"
+    ]
+  },
   "version": "1.2.286",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
