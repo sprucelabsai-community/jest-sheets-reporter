@@ -1,3 +1,5 @@
+## [1.2.290](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.289...v1.2.290) (2021-12-21)
+
 ## [1.2.289](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.288...v1.2.289) (2021-12-19)
 
 ## [1.2.288](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.287...v1.2.288) (2021-12-19)
