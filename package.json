@@ -10,7 +10,8 @@
     "namespace": "jest-sheets-reporter",
     "upgradeIgnoreList": [
       "@sprucelabs/spruce-test",
-      "@sprucelabs/resolve-path-aliases"
+      "@sprucelabs/resolve-path-aliases",
+      "dotenv"
     ]
   },
   "version": "1.2.307",
@@ -59,7 +60,7 @@
     "**/dotenv": "11.0.0"
   },
   "dependencies": {
-    "dotenv": "^12.0.3",
+    "dotenv": "11.0.0",
     "google-spreadsheet": "^3.2.0"
   },
   "devDependencies": {
