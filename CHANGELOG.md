@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.319...v1.3.0) (2022-02-02)
+
+
+### Features
+
+* devs can now specificy a worksheetId in the cell position ([c60ff58](https://github.com/sprucelabsai/jest-sheets-reporter/commit/c60ff58))
+
 ## [1.2.319](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.318...v1.2.319) (2022-01-31)
 
 ## [1.2.318](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.2.317...v1.2.318) (2022-01-29)
