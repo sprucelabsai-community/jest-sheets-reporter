@@ -74,11 +74,19 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 				).join(', ')}`
 			)
 		}
-		const cell = this.testMap[testName]
+		let cell: any = this.testMap[testName]
+		let worksheetId: any = this.worksheetId
+
+		if (cell.includes(':')) {
+			const parts = cell.split(':')
+			worksheetId = parts[0]
+			cell = parts[1]
+		}
+
 		try {
 			await this.adapter.updateCell({
 				sheetId: this.sheetId,
-				worksheetId: this.worksheetId,
+				worksheetId,
 				cell,
 				value: status === 'passed' ? 1 : 0,
 			})

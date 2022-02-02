@@ -28,9 +28,13 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 			title: 'canSyncSchemas',
 			status: TEST_JEST_FAILED,
 		},
+		{
+			title: 'canBootCliInDifferentWorksheet',
+			status: TEST_JEST_PASSED,
+		},
 	]
 
-	private static readonly testMap = {
+	private static testMap: Record<string, string> = {
 		canBootCli: 'B1',
 		canSyncSchemas: 'B2',
 	}
@@ -61,9 +65,9 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 
 	@test()
 	protected static async canFilterMappedTests() {
-		const testResults: IJestTestResult[] = SheetsReporterTest.testResults
+		const testResults: IJestTestResult[] = this.testResults
 
-		const testMap: ITestMap = SheetsReporterTest.testMap
+		const testMap: ITestMap = this.testMap
 
 		const results = SheetsReporterUtility.getMappedTests(testMap, testResults)
 
@@ -115,5 +119,24 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 		)
 
 		assert.isEqual(value2, 0)
+	}
+
+	@test.only('can update in another worksheet 1', 'B1')
+	@test.only('can update in another worksheet 2', 'B2')
+	protected static async canSetWorksheetIdInCell(cell: string) {
+		const worksheetId = await this.sheetsAdapter.generateRandomWorksheet(
+			this.sheetId
+		)
+
+		this.testMap.canBootCliInDifferentWorksheet = `${worksheetId}:${cell}`
+		await this.reporter.reportTestAsPassed('canBootCliInDifferentWorksheet')
+
+		const value = await this.sheetsAdapter.fetchCellValue(
+			this.sheetId,
+			worksheetId,
+			cell
+		)
+
+		assert.isEqual(value, 1)
 	}
 }
