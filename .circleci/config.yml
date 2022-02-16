@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  hub: yasuhiroki/hub@0.0.2
+  spruce: sprucelabsai/orb@1
 jobs:
   test:
     docker:
