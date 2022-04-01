@@ -40,7 +40,7 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 	}
 
 	protected static async beforeAll() {
-		this.worksheetId = await this.sheetsAdapter.generateRandomWorksheet(
+		this.worksheetId = await this.sheetsAdapter.createRandomWorksheet(
 			this.sheetId
 		)
 	}
@@ -102,7 +102,7 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 
 	@test()
 	protected static async canUpdateAllTestsAfterCompletion() {
-		await this.reporter.onTestResult({}, { testResults: this.testResults })
+		this.reporter.onTestResult({}, { testResults: this.testResults })
 
 		const value = await this.sheetsAdapter.fetchCellValue(
 			this.sheetId,
@@ -121,10 +121,10 @@ export default class SheetsReporterTest extends AbstractSheetsReporterTest {
 		assert.isEqual(value2, 0)
 	}
 
-	@test.only('can update in another worksheet 1', 'B1')
-	@test.only('can update in another worksheet 2', 'B2')
+	@test('can update in another worksheet 1', 'B1')
+	@test('can update in another worksheet 2', 'B2')
 	protected static async canSetWorksheetIdInCell(cell: string) {
-		const worksheetId = await this.sheetsAdapter.generateRandomWorksheet(
+		const worksheetId = await this.sheetsAdapter.createRandomWorksheet(
 			this.sheetId
 		)
 

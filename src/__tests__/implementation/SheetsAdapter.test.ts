@@ -28,7 +28,7 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
 	}
 
 	protected static async beforeAll() {
-		this.worksheetId = await this.sheetsAdapter.generateRandomWorksheet(
+		this.worksheetId = await this.sheetsAdapter.createRandomWorksheet(
 			this.sheetId
 		)
 	}
@@ -60,5 +60,19 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
 		)
 
 		assert.isEqual(actualValue, expected)
+	}
+
+	@test()
+	protected static async updatingCellManyTimesAtOnceDoesNotHitRateLimit() {
+		await Promise.all(
+			new Array(75).fill(0).map(async (_, idx) => {
+				await this.adapter.updateCell({
+					sheetId: this.sheetId,
+					worksheetId: this.worksheetId,
+					cell: 'A1',
+					value: idx,
+				})
+			})
+		)
 	}
 }

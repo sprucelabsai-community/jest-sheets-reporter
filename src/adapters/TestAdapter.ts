@@ -1,7 +1,7 @@
 import SheetsReporterGoogleAdapter from './GoogleAdapter'
 
 export default class SheetsReporterTestAdapter extends SheetsReporterGoogleAdapter {
-	private randomCount = 0
+	private static randomCount = 0
 
 	public async fetchCellValue(
 		sheetId: string,
@@ -12,12 +12,12 @@ export default class SheetsReporterTestAdapter extends SheetsReporterGoogleAdapt
 		return results.cell.value
 	}
 
-	public async generateRandomWorksheet(sheetId: string): Promise<number> {
-		const name = `TEST.${Date.now()}-${this.randomCount}`
+	public async createRandomWorksheet(sheetId: string): Promise<number> {
+		const name = `TEST.${Date.now()}-${SheetsReporterTestAdapter.randomCount}`
 		const sheet = await this.fetchSpreadsheet(sheetId)
 		const worksheet = await sheet.addWorksheet({ title: name })
 
-		this.randomCount++
+		SheetsReporterTestAdapter.randomCount++
 		return parseInt(worksheet.sheetId, 10)
 	}
 

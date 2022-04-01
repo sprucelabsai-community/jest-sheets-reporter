@@ -26,9 +26,9 @@ export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter
 		return SheetsReporterMockAdapter.cellCache[key]
 	}
 
-	public async generateRandomWorksheet() {
+	public async createRandomWorksheet() {
 		return -1
 	}
 
-	public async deleteWorksheet() {}
+	public async deleteWorksheet() { }
 }
