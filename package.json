@@ -57,7 +57,8 @@
   },
   "dependencies": {
     "dotenv": "^16.0.0",
-    "google-spreadsheet": "^3.2.0"
+    "google-spreadsheet": "^3.2.0",
+    "retry": "^0.13.1"
   },
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^1.0.244",

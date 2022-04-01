@@ -1,12 +1,12 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
+import retry from 'retry'
 import {
 	IGoogleSheetsAdapter,
 	IGoogleSheetsOptions,
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
-{
+	implements IGoogleSheetsAdapter {
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -44,17 +44,49 @@ export default class SheetsReporterGoogleAdapter
 		cell: string
 		value: string | number | boolean
 	}): Promise<void> {
+		await new Promise<void>((resolve, reject) => {
+			void this.retriedUpdateCell(options, resolve, reject)
+		})
+	}
+
+	private async retriedUpdateCell(
+		options: {
+			sheetId: string
+			worksheetId: number
+			cell: string
+			value: string | number | boolean
+		},
+		resolve: () => void,
+		reject: (reason?: any) => void
+	) {
 		const { sheetId, worksheetId, value, cell: cellLookup } = options
 
-		const { cell, sheet } = await this.fetchSheetAndCell(
-			sheetId,
-			worksheetId,
-			cellLookup
-		)
+		const operation = retry.operation({
+			factor: 2,
+			retries: 10,
+			randomize: true,
+		})
 
-		cell.value = value
+		operation.attempt(async () => {
+			try {
+				const { cell, sheet } = await this.fetchSheetAndCell(
+					sheetId,
+					worksheetId,
+					cellLookup
+				)
 
-		await sheet.saveUpdatedCells()
+				cell.value = value
+
+				await sheet.saveUpdatedCells()
+				resolve()
+			} catch (err: any) {
+				if (operation.retry(err)) {
+					return
+				}
+
+				reject(operation.mainError())
+			}
+		})
 	}
 
 	protected async fetchSheetAndCell(

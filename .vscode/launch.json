@@ -1,43 +1,34 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Test File",
-            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-            "args": [
-              "${file}"
-            ],
-            "skipFiles": [
-              "node_modules",
-              "async_hooks.js",
-              "inspector_async_hooks.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Test API",
-            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-            "args": [
-              "${workspaceRoot}/index.test.js"
-            ],
-            "skipFiles": [
-              "coverage",
-              "node_modules"
-            ]
-          },
-          {
-            "type": "node",
-            "request": "launch",
-            "name": "Test All",
-            "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-            "skipFiles": [
-            ]
-          }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "attach.tests",
+      "port": 5200,
+      "restart": true,
+      "timeout": 10000,
+      "autoAttachChildProcesses": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "test.file",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "--trace-warnings",
+        "${workspaceFolder}/node_modules/.bin/jest",
+        "${fileBasenameNoExtension}",
+        "--detectOpenHandles"
+      ],
+      "port": 9229,
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+  ]
 }
