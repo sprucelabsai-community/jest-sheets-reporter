@@ -69,9 +69,11 @@ export default class SheetsReporter<TestMap extends ITestMap> {
 	) {
 		if (!this.testMap[testName]) {
 			throw new Error(
-				`Invalid test name. Got "${testName}" but expected one of the following: ${Object.keys(
-					this.testMap
-				).join(', ')}`
+				`Invalid test name. Got "${String(
+					testName
+				)}" but expected one of the following: ${Object.keys(this.testMap).join(
+					', '
+				)}`
 			)
 		}
 		let cell: any = this.testMap[testName]
