@@ -65,7 +65,7 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
 	@test()
 	protected static async updatingCellManyTimesAtOnceDoesNotHitRateLimit() {
 		await Promise.all(
-			new Array(65).fill(0).map(async (_, idx) => {
+			new Array(60).fill(0).map(async (_, idx) => {
 				await this.adapter.updateCell({
 					sheetId: this.sheetId,
 					worksheetId: this.worksheetId,
