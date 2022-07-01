@@ -1,5 +1,7 @@
-{
+  {
   "scriptUpdater": {
-    "skipped": []
+    "skipped": [
+      "tsconfig.json"
+    ]
   }
 }
