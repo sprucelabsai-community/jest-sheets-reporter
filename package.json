@@ -63,7 +63,7 @@
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^1.0.244",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.334",
+    "@sprucelabs/test": "^7.7.335",
     "@types/google-spreadsheet": "^3.3.0",
     "@types/node": "^18.0.3",
     "chokidar-cli": "^3.0.0",
