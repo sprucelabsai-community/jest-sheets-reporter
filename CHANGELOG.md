@@ -1,3 +1,5 @@
+## [1.3.82](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.81...v1.3.82) (2022-08-19)
+
 ## [1.3.81](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.80...v1.3.81) (2022-08-16)
 
 ## [1.3.80](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.79...v1.3.80) (2022-08-16)
