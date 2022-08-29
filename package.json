@@ -10,8 +10,7 @@
     "namespace": "jest-sheets-reporter",
     "upgradeIgnoreList": [
       "@sprucelabs/spruce-test",
-      "@sprucelabs/resolve-path-aliases",
-      "typescript"
+      "@sprucelabs/resolve-path-aliases"
     ]
   },
   "version": "1.3.90",
