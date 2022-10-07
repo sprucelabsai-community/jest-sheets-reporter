@@ -14,7 +14,9 @@ npm install --dev @sprucelabs/jest-sheets-reporter
 ```
 
 ## Example Jest config
+Inside your `package.json` there is a `jest` block. 
 
+Add the following configuration:
 ```json
 "jest": {
     "reporters": [
@@ -23,7 +25,7 @@ npm install --dev @sprucelabs/jest-sheets-reporter
             "@sprucelabs/jest-sheets-reporter",
             {
                 "sheetId": "{{spreadsheetId}}",
-                "worksheetId": {{tabId}},
+                "worksheetId": 0,
                 "testMap": {
                     "testName": "destinationCell",
                     "getsGoodHealthCheckAndNothingElse": "C5",
