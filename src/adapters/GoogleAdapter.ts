@@ -6,8 +6,7 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
-{
+	implements IGoogleSheetsAdapter {
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -82,10 +81,12 @@ export default class SheetsReporterGoogleAdapter
 				resolve()
 			} catch (err: any) {
 				if (operation.retry(err)) {
+					console.error('Sheets reporter error', err)
 					return
 				}
 
-				reject(operation.mainError())
+				const error = operation.mainError()
+				reject(error)
 			}
 		})
 	}
