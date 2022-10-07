@@ -4,6 +4,15 @@ Update a Google Sheet when your tests pass or fail.
 
 <img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/overview.png">
 
+## Installing
+
+```bash
+yarn add -D @sprucelabs/jest-sheets-reporter
+```
+```bash
+npm install  --dev @sprucelabs/jest-sheets-reporter
+```
+
 ## Example Jest config
 
 ```json
