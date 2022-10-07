@@ -10,7 +10,7 @@ Update a Google Sheet when your tests pass or fail.
 yarn add -D @sprucelabs/jest-sheets-reporter
 ```
 ```bash
-npm install  --dev @sprucelabs/jest-sheets-reporter
+npm install --dev @sprucelabs/jest-sheets-reporter
 ```
 
 ## Example Jest config
