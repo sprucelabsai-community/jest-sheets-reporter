@@ -30,5 +30,5 @@ export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter
 		return -1
 	}
 
-	public async deleteWorksheet() { }
+	public async deleteWorksheet() {}
 }
