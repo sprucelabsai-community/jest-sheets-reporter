@@ -6,8 +6,7 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
-{
+	implements IGoogleSheetsAdapter {
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -81,7 +80,18 @@ export default class SheetsReporterGoogleAdapter
 				await sheet.saveUpdatedCells()
 				resolve()
 			} catch (err: any) {
-				if (operation.retry(err)) {
+				const isBadKey = err.reason === 'no start line'
+
+				if (isBadKey) {
+					reject(
+						new Error(
+							`Bad private key! Checkout this for next steps:\n\nhttps://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication`
+						)
+					)
+					return
+				}
+
+				if (operation.retry(err) && isBadKey) {
 					console.error('Sheets reporter error', err)
 					return
 				}
