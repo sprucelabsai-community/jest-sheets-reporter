@@ -30,7 +30,7 @@ export class SheetsReporterUtility {
 
 		if (!filePath) {
 			throw new Error(
-				`SheetsReporter has no adapter set, try adding SHEETS_REPORTER_ADAPTER="MockAdapter" or SHEETS_REPORTER_ADAPTER="GoogleAdapter" to your env.`
+				`SheetsReporter has no adapter set, try adding SHEETS_REPORTER_ADAPTER="DummyAdapter" or SHEETS_REPORTER_ADAPTER="GoogleAdapter" to your env.`
 			)
 		}
 

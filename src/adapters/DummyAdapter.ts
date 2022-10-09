@@ -1,6 +1,6 @@
 import SheetsReporterTestAdapter from './TestAdapter'
 
-export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter {
+export default class SheetsReporterDummyAdapter extends SheetsReporterTestAdapter {
 	private static cellCache: Record<string, string | number | boolean> = {}
 
 	public constructor() {
@@ -14,7 +14,7 @@ export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter
 		value: string | number | boolean
 	}): Promise<void> {
 		const key = `${options.sheetId}${options.worksheetId}${options.cell}`
-		SheetsReporterMockAdapter.cellCache[key] = options.value
+		SheetsReporterDummyAdapter.cellCache[key] = options.value
 	}
 
 	public async fetchCellValue(
@@ -23,12 +23,12 @@ export default class SheetsReporterMockAdapter extends SheetsReporterTestAdapter
 		cell: string
 	) {
 		const key = `${sheetId}${worksheetId}${cell}`
-		return SheetsReporterMockAdapter.cellCache[key]
+		return SheetsReporterDummyAdapter.cellCache[key]
 	}
 
 	public async createRandomWorksheet() {
 		return -1
 	}
 
-	public async deleteWorksheet() {}
+	public async deleteWorksheet() { }
 }
