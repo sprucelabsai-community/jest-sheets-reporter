@@ -30,5 +30,5 @@ export default class SheetsReporterDummyAdapter extends SheetsReporterTestAdapte
 		return -1
 	}
 
-	public async deleteWorksheet() { }
+	public async deleteWorksheet() {}
 }
