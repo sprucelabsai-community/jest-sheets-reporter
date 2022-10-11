@@ -1,3 +1,10 @@
+# [2.0.0](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.124...v2.0.0) (2022-10-11)
+
+
+### Breaking Changes
+
+* MockAdapter -> DummyAdapter ([4a24959](https://github.com/sprucelabsai/jest-sheets-reporter/commit/4a24959))
+
 ## [1.3.124](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.123...v1.3.124) (2022-10-08)
 
 ## [1.3.123](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v1.3.122...v1.3.123) (2022-10-07)
