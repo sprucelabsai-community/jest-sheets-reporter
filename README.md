@@ -57,3 +57,19 @@ You can change the look of a cell by using conditional formatting:
 Then we set the background and the text color based on the value being exactly `1` or `0`.
 
 <img src="https://raw.githubusercontent.com/sprucelabsai/jest-sheets-reporter/master/docs/images/stylerules.png">
+
+
+## Getting your account credentials
+
+1. Visit the [Google Console](https://console.developers.google.com/)
+2. Create a new project, call it Test Integrations
+3. After creation, go to the project dashboard and in the left meno go "API's & Services" -> "Enabled API's & Services"
+4. Click "+ Enable API's and Services"
+5. Find sheets and enable it.
+6. After save, click "Create Credentials" in the upper right.
+7. Give it a name, leave everything else blank and save
+8. Click the Cridentials tab and look under Service Accounts
+9. From the left hamburger menu, "API's & Services" -> "Credentials"
+10. Click "+ Create Cridentials" -> API Key
+11. Click API key 1 or 2? Why two? Not sure!
+12. "Restrict Key" -> Google Sheets

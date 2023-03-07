@@ -6,8 +6,7 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
-{
+	implements IGoogleSheetsAdapter {
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -81,7 +80,8 @@ export default class SheetsReporterGoogleAdapter
 				await sheet.saveUpdatedCells()
 				resolve()
 			} catch (err: any) {
-				const isBadKey = err.reason === 'no start line'
+				const isBadKey =
+					err.reason === 'no start line' || err.code === 'ERR_OSSL_UNSUPPORTED'
 
 				if (isBadKey) {
 					reject(

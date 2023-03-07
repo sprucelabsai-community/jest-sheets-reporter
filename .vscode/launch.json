@@ -17,7 +17,7 @@
       "type": "node",
       "request": "launch",
       "name": "test.file",
-      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeExecutable": "node",
       "runtimeArgs": [
         "--inspect-brk",
         "--trace-warnings",
