@@ -68,8 +68,9 @@ Then we set the background and the text color based on the value being exactly `
 5. Find sheets and enable it.
 6. After save, click "Create Credentials" in the upper right.
 7. Give it a name, leave everything else blank and save
-8. Click the Cridentials tab and look under Service Accounts
-9. From the left hamburger menu, "API's & Services" -> "Credentials"
-10. Click "+ Create Cridentials" -> API Key
-11. Click API key 1 or 2? Why two? Not sure!
-12. "Restrict Key" -> Google Sheets
+9. On the service account details page, click "KEYS" tab
+10. Click Add Key -> JSON
+11. Take the download private key and open it
+12. client_email -> GOOGLE_SERVICE_EMAIL
+13. private_key -> GOOGLE_SERVICE_PRIVATE_KEY
+14. Remember to invite the service email to any spreadsheet you want it to update!
