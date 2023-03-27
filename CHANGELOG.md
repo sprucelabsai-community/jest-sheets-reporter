@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v2.0.21...v3.0.0) (2023-03-27)
+
+
+### Breaking Changes
+
+* upgrade ([8436d62](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/8436d62))
+
 ## [2.0.21](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v2.0.20...v2.0.21) (2022-11-05)
 
 ## [2.0.20](https://github.com/sprucelabsai/jest-sheets-reporter/compare/v2.0.19...v2.0.20) (2022-11-04)
