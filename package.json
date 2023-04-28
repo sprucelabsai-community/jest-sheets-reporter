@@ -63,7 +63,7 @@
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^1.1.123",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^7.7.444",
+    "@sprucelabs/test": "^7.7.445",
     "@types/google-spreadsheet": "^3.3.1",
     "@types/node": "^18.16.2",
     "chokidar-cli": "^3.0.0",
@@ -74,7 +74,7 @@
     "jest-reporters": "^0.0.2",
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
-    "tsc-watch": "^6.0.0",
+    "tsc-watch": "^6.0.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4"
   },
