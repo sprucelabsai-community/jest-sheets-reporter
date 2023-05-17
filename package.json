@@ -13,7 +13,7 @@
       "@sprucelabs/resolve-path-aliases"
     ]
   },
-  "version": "3.0.19",
+  "version": "3.0.20",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
   "description": "Have your Jest tests update a Google Spreadsheet™®©. 📡",
