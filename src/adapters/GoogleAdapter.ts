@@ -6,7 +6,8 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter {
+	implements IGoogleSheetsAdapter
+{
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -135,9 +136,7 @@ export default class SheetsReporterGoogleAdapter
 	}
 
 	protected async uncachedFetchSpreadsheet(sheetId: string) {
-		const doc = new GoogleSpreadsheet(sheetId, {
-			''
-		})
+		const doc = new GoogleSpreadsheet(sheetId)
 
 		await doc.useServiceAccountAuth({
 			// eslint-disable-next-line @typescript-eslint/naming-convention
