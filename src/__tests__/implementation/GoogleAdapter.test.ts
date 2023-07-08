@@ -17,7 +17,7 @@ export default class GoogleAdapterTest extends AbstractSpruceTest {
 					worksheetId: 0,
 					value: '100',
 				}),
-			'https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication'
+			'https://theoephraim.github.io/node-google-spreadsheet/#/'
 		)
 	}
 }

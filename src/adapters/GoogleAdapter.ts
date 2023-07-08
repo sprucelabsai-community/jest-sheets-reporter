@@ -1,3 +1,4 @@
+import { JWT } from 'google-auth-library'
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import retry from 'retry'
 import {
@@ -6,8 +7,7 @@ import {
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
-{
+	implements IGoogleSheetsAdapter {
 	private serviceEmail: string
 	private privateKey: string
 	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
@@ -82,12 +82,14 @@ export default class SheetsReporterGoogleAdapter
 				resolve()
 			} catch (err: any) {
 				const isBadKey =
-					err.reason === 'no start line' || err.code === 'ERR_OSSL_UNSUPPORTED'
+					err.reason === 'no start line' ||
+					err.code === 'ERR_OSSL_UNSUPPORTED' ||
+					err.message.includes('valid API')
 
 				if (isBadKey) {
 					reject(
 						new Error(
-							`Bad private key! Checkout this for next steps:\n\nhttps://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication`
+							`https://theoephraim.github.io/node-google-spreadsheet/#/`
 						)
 					)
 					return
@@ -136,14 +138,12 @@ export default class SheetsReporterGoogleAdapter
 	}
 
 	protected async uncachedFetchSpreadsheet(sheetId: string) {
-		const doc = new GoogleSpreadsheet(sheetId)
-
-		await doc.useServiceAccountAuth({
-			// eslint-disable-next-line @typescript-eslint/naming-convention
-			client_email: this.serviceEmail,
-			// eslint-disable-next-line @typescript-eslint/naming-convention
-			private_key: this.privateKey,
+		const auth = new JWT({
+			email: this.serviceEmail,
+			key: this.privateKey,
 		})
+
+		const doc = new GoogleSpreadsheet(sheetId, auth)
 
 		await doc.loadInfo()
 
