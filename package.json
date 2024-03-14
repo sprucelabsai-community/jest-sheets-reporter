@@ -63,10 +63,10 @@
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^1.1.284",
+    "@sprucelabs/resolve-path-aliases": "^1.1.288",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^8.0.43",
-    "@types/node": "^20.11.25",
+    "@sprucelabs/test": "^8.0.44",
+    "@types/node": "^20.11.27",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.2.2",
