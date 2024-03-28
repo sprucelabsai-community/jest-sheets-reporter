@@ -22,3 +22,5 @@ yarn.lock
 .env.*
 .env-*
 .eslintcache
+
+**/.spruce/*cache.json

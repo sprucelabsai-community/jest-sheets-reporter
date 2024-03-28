@@ -5,7 +5,8 @@
   "writer": {
     "skipped": [
       "tsconfig.json",
-      ".nvmrc"
+      ".nvmrc",
+      ".gitignore"
     ]
   }
 }
