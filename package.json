@@ -63,10 +63,10 @@
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^1.1.294",
+    "@sprucelabs/resolve-path-aliases": "^1.1.304",
     "@sprucelabs/semantic-release": "^4.0.8",
-    "@sprucelabs/test": "^8.0.48",
-    "@types/node": "^20.11.30",
+    "@sprucelabs/test": "^8.0.51",
+    "@types/node": "^20.12.7",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.2.2",
@@ -78,7 +78,7 @@
     "ts-node": "^10.9.2",
     "tsc-watch": "^6.2.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   },
   "jest": {
     "testTimeout": 300000,
