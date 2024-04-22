@@ -2,152 +2,154 @@ import { JWT } from 'google-auth-library'
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import retry from 'retry'
 import {
-	IGoogleSheetsAdapter,
-	IGoogleSheetsOptions,
+    IGoogleSheetsAdapter,
+    IGoogleSheetsOptions,
 } from '../sheetsReporter.types'
 
 export default class SheetsReporterGoogleAdapter
-	implements IGoogleSheetsAdapter
+    implements IGoogleSheetsAdapter
 {
-	private serviceEmail: string
-	private privateKey: string
-	private spreadsheetInstancesById: Record<string, Promise<GoogleSpreadsheet>> =
-		{}
+    private serviceEmail: string
+    private privateKey: string
+    private spreadsheetInstancesById: Record<
+        string,
+        Promise<GoogleSpreadsheet>
+    > = {}
 
-	public constructor(options?: IGoogleSheetsOptions) {
-		const email = options
-			? options.serviceEmail
-			: process.env.GOOGLE_SERVICE_EMAIL
+    public constructor(options?: IGoogleSheetsOptions) {
+        const email = options
+            ? options.serviceEmail
+            : process.env.GOOGLE_SERVICE_EMAIL
 
-		if (!email) {
-			throw new Error(
-				`GoogleSpreadsheetAdapter needs GOOGLE_SERVICE_EMAIL in the env or passed email to constructor`
-			)
-		}
+        if (!email) {
+            throw new Error(
+                `GoogleSpreadsheetAdapter needs GOOGLE_SERVICE_EMAIL in the env or passed email to constructor`
+            )
+        }
 
-		this.serviceEmail = email
+        this.serviceEmail = email
 
-		const privateKey = options
-			? options.privateKey
-			: process.env.GOOGLE_SERVICE_PRIVATE_KEY
+        const privateKey = options
+            ? options.privateKey
+            : process.env.GOOGLE_SERVICE_PRIVATE_KEY
 
-		if (!privateKey) {
-			throw new Error(
-				'GoogleSpreadsheetAdapter needs GOOGLE_SERVICE_PRIVATE_KEY in the env or privateKey in constructor'
-			)
-		}
+        if (!privateKey) {
+            throw new Error(
+                'GoogleSpreadsheetAdapter needs GOOGLE_SERVICE_PRIVATE_KEY in the env or privateKey in constructor'
+            )
+        }
 
-		this.privateKey = privateKey
-	}
+        this.privateKey = privateKey
+    }
 
-	public async updateCell(options: {
-		sheetId: string
-		worksheetId: number
-		cell: string
-		value: string | number | boolean
-	}): Promise<void> {
-		await new Promise<void>((resolve, reject) => {
-			void this.retriedUpdateCell(options, resolve, reject)
-		})
-	}
+    public async updateCell(options: {
+        sheetId: string
+        worksheetId: number
+        cell: string
+        value: string | number | boolean
+    }): Promise<void> {
+        await new Promise<void>((resolve, reject) => {
+            void this.retriedUpdateCell(options, resolve, reject)
+        })
+    }
 
-	private async retriedUpdateCell(
-		options: {
-			sheetId: string
-			worksheetId: number
-			cell: string
-			value: string | number | boolean
-		},
-		resolve: () => void,
-		reject: (reason?: any) => void
-	) {
-		const { sheetId, worksheetId, value, cell: cellLookup } = options
+    private async retriedUpdateCell(
+        options: {
+            sheetId: string
+            worksheetId: number
+            cell: string
+            value: string | number | boolean
+        },
+        resolve: () => void,
+        reject: (reason?: any) => void
+    ) {
+        const { sheetId, worksheetId, value, cell: cellLookup } = options
 
-		const operation = retry.operation({
-			factor: 2,
-			retries: 10,
-			randomize: true,
-		})
+        const operation = retry.operation({
+            factor: 2,
+            retries: 10,
+            randomize: true,
+        })
 
-		operation.attempt(async () => {
-			try {
-				const { cell, sheet } = await this.fetchSheetAndCell(
-					sheetId,
-					worksheetId,
-					cellLookup
-				)
+        operation.attempt(async () => {
+            try {
+                const { cell, sheet } = await this.fetchSheetAndCell(
+                    sheetId,
+                    worksheetId,
+                    cellLookup
+                )
 
-				cell.value = value
+                cell.value = value
 
-				await sheet.saveUpdatedCells()
-				resolve()
-			} catch (err: any) {
-				const isBadKey =
-					err.reason === 'no start line' ||
-					err.code === 'ERR_OSSL_UNSUPPORTED' ||
-					err.message.includes('valid API')
+                await sheet.saveUpdatedCells()
+                resolve()
+            } catch (err: any) {
+                const isBadKey =
+                    err.reason === 'no start line' ||
+                    err.code === 'ERR_OSSL_UNSUPPORTED' ||
+                    err.message.includes('valid API')
 
-				if (isBadKey) {
-					reject(
-						new Error(
-							`https://theoephraim.github.io/node-google-spreadsheet/#/`
-						)
-					)
-					return
-				}
+                if (isBadKey) {
+                    reject(
+                        new Error(
+                            `https://theoephraim.github.io/node-google-spreadsheet/#/`
+                        )
+                    )
+                    return
+                }
 
-				if (operation.retry(err) && isBadKey) {
-					console.error('Sheets reporter error', err)
-					return
-				}
+                if (operation.retry(err) && isBadKey) {
+                    console.error('Sheets reporter error', err)
+                    return
+                }
 
-				const error = operation.mainError()
-				reject(error)
-			}
-		})
-	}
+                const error = operation.mainError()
+                reject(error)
+            }
+        })
+    }
 
-	protected async fetchSheetAndCell(
-		sheetId: string,
-		worksheetId: number,
-		cellLookup: string
-	) {
-		const spreadsheet = await this.fetchSpreadsheet(sheetId)
-		const sheet = spreadsheet.sheetsById[worksheetId]
+    protected async fetchSheetAndCell(
+        sheetId: string,
+        worksheetId: number,
+        cellLookup: string
+    ) {
+        const spreadsheet = await this.fetchSpreadsheet(sheetId)
+        const sheet = spreadsheet.sheetsById[worksheetId]
 
-		if (!sheet) {
-			throw new Error(`Could not find worksheet with id: ${worksheetId}`)
-		}
-		await sheet.loadCells(cellLookup)
+        if (!sheet) {
+            throw new Error(`Could not find worksheet with id: ${worksheetId}`)
+        }
+        await sheet.loadCells(cellLookup)
 
-		const cell = sheet.getCellByA1(cellLookup)
+        const cell = sheet.getCellByA1(cellLookup)
 
-		return { cell, sheet }
-	}
+        return { cell, sheet }
+    }
 
-	protected async fetchSpreadsheet(sheetId: string) {
-		//@ts-ignore
-		if (this.spreadsheetInstancesById[sheetId]) {
-			return this.spreadsheetInstancesById[sheetId]
-		}
+    protected async fetchSpreadsheet(sheetId: string) {
+        //@ts-ignore
+        if (this.spreadsheetInstancesById[sheetId]) {
+            return this.spreadsheetInstancesById[sheetId]
+        }
 
-		const spreadsheet = this.uncachedFetchSpreadsheet(sheetId)
+        const spreadsheet = this.uncachedFetchSpreadsheet(sheetId)
 
-		this.spreadsheetInstancesById[sheetId] = spreadsheet
+        this.spreadsheetInstancesById[sheetId] = spreadsheet
 
-		return spreadsheet
-	}
+        return spreadsheet
+    }
 
-	protected async uncachedFetchSpreadsheet(sheetId: string) {
-		const auth = new JWT({
-			email: this.serviceEmail,
-			key: this.privateKey,
-		})
+    protected async uncachedFetchSpreadsheet(sheetId: string) {
+        const auth = new JWT({
+            email: this.serviceEmail,
+            key: this.privateKey,
+        })
 
-		const doc = new GoogleSpreadsheet(sheetId, auth)
+        const doc = new GoogleSpreadsheet(sheetId, auth)
 
-		await doc.loadInfo()
+        await doc.loadInfo()
 
-		return doc
-	}
+        return doc
+    }
 }
