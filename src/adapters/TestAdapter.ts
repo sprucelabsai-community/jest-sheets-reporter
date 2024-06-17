@@ -15,10 +15,10 @@ export default class SheetsReporterTestAdapter extends SheetsReporterGoogleAdapt
     public async createRandomWorksheet(sheetId: string): Promise<number> {
         const name = `TEST.${Date.now()}-${SheetsReporterTestAdapter.randomCount}`
         const sheet = await this.fetchSpreadsheet(sheetId)
-        const worksheet = await sheet.addSheet({ title: name })
+        const worksheet = await sheet.addWorksheet({ title: name })
 
         SheetsReporterTestAdapter.randomCount++
-        return worksheet.sheetId
+        return parseInt(worksheet.sheetId, 10)
     }
 
     public async deleteWorksheet(

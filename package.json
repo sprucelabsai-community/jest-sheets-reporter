@@ -57,11 +57,11 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "google-auth-library": "^8.9.0",
-    "google-spreadsheet": "^4.0.2",
+    "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
   "devDependencies": {
+    "@types/google-spreadsheet": "^3.3.2",
     "@sprucelabs/resolve-path-aliases": "^2.0.7",
     "@sprucelabs/semantic-release": "^5.0.1",
     "@sprucelabs/test": "^9.0.5",
