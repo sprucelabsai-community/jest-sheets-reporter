@@ -62,7 +62,7 @@
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^2.0.44",
+    "@sprucelabs/resolve-path-aliases": "^2.0.45",
     "@sprucelabs/semantic-release": "^5.0.1",
     "@sprucelabs/test": "^9.0.30",
     "@types/google-spreadsheet": "^3.3.2",
