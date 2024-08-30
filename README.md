@@ -47,7 +47,6 @@ If a test passes, the cell is set to 1.
 
 If a test fails, the cell is set to 0.
 
-
 ## Making it pretty
 
 You can change the look of a cell by using conditional formatting:
