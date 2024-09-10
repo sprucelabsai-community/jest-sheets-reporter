@@ -15,7 +15,7 @@
       "@types/google-spreadsheet"
     ]
   },
-  "version": "3.0.122",
+  "version": "3.0.123",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
   "description": "Have your Jest tests update a Google Spreadsheet™®©. 📡",
