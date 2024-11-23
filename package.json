@@ -61,9 +61,9 @@
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^2.0.516",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^9.0.59",
+    "@sprucelabs/test": "^9.0.60",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^22.9.1",
+    "@types/node": "^22.9.3",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.15.0",
@@ -74,7 +74,7 @@
     "ts-node": "^10.9.2",
     "tsc-watch": "^6.2.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "jest": {
     "testTimeout": 300000,
