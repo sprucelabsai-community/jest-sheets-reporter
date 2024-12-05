@@ -54,14 +54,14 @@
     "watch.tsc": "tsc -w"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^2.0.519",
+    "@sprucelabs/resolve-path-aliases": "^2.0.520",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^9.0.62",
+    "@sprucelabs/test": "^9.0.63",
     "@types/google-spreadsheet": "^3.3.2",
     "@types/node": "^22.10.1",
     "@types/retry": "^0.12.5",
@@ -70,7 +70,7 @@
     "eslint-config-spruce": "^11.2.26",
     "jest": "^29.7.0",
     "jest-reporters": "^0.0.2",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
     "tsc-watch": "^6.2.1",
     "tsconfig-paths": "^4.2.0",
