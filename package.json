@@ -15,7 +15,7 @@
       "@types/google-spreadsheet"
     ]
   },
-  "version": "3.0.166",
+  "version": "3.0.204",
   "main": "./build/SheetsReporter.js",
   "types": "./build/SheetsReporter.d.ts",
   "description": "Have your Jest tests update a Google Spreadsheet™®©. 📡",
@@ -54,27 +54,27 @@
     "watch.tsc": "tsc -w"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^2.0.487",
+    "@sprucelabs/resolve-path-aliases": "^2.0.528",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^9.0.55",
+    "@sprucelabs/test": "^9.0.68",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^22.7.9",
+    "@types/node": "^22.13.1",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
-    "eslint": "^9.13.0",
+    "eslint": "^9.19.0",
     "eslint-config-spruce": "^11.2.26",
     "jest": "^29.7.0",
     "jest-reporters": "^0.0.2",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
-    "tsc-watch": "^6.2.0",
+    "tsc-watch": "^6.2.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.3"
   },
   "jest": {
     "testTimeout": 300000,

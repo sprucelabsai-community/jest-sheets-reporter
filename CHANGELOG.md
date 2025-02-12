@@ -1,3 +1,79 @@
+## [3.0.204](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.203...v3.0.204) (2025-02-04)
+
+## [3.0.203](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.202...v3.0.203) (2025-01-31)
+
+## [3.0.202](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.201...v3.0.202) (2025-01-29)
+
+## [3.0.201](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.200...v3.0.201) (2025-01-29)
+
+## [3.0.200](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.199...v3.0.200) (2025-01-16)
+
+## [3.0.199](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.198...v3.0.199) (2025-01-15)
+
+## [3.0.198](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.197...v3.0.198) (2025-01-01)
+
+## [3.0.197](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.196...v3.0.197) (2024-12-17)
+
+## [3.0.196](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.195...v3.0.196) (2024-12-11)
+
+## [3.0.195](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.194...v3.0.195) (2024-12-07)
+
+## [3.0.194](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.193...v3.0.194) (2024-12-05)
+
+## [3.0.193](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.192...v3.0.193) (2024-12-01)
+
+## [3.0.192](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.191...v3.0.192) (2024-11-26)
+
+## [3.0.191](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.190...v3.0.191) (2024-11-26)
+
+## [3.0.190](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.189...v3.0.190) (2024-11-25)
+
+## [3.0.189](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.188...v3.0.189) (2024-11-24)
+
+## [3.0.188](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.187...v3.0.188) (2024-11-23)
+
+## [3.0.187](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.186...v3.0.187) (2024-11-15)
+
+## [3.0.186](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.185...v3.0.186) (2024-11-15)
+
+## [3.0.185](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.184...v3.0.185) (2024-11-08)
+
+## [3.0.184](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.183...v3.0.184) (2024-11-05)
+
+## [3.0.183](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.182...v3.0.183) (2024-11-04)
+
+## [3.0.182](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.181...v3.0.182) (2024-11-02)
+
+## [3.0.181](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.180...v3.0.181) (2024-11-01)
+
+## [3.0.180](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.179...v3.0.180) (2024-11-01)
+
+## [3.0.179](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.178...v3.0.179) (2024-10-30)
+
+## [3.0.178](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.177...v3.0.178) (2024-10-30)
+
+## [3.0.177](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.176...v3.0.177) (2024-10-30)
+
+## [3.0.176](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.175...v3.0.176) (2024-10-30)
+
+## [3.0.175](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.174...v3.0.175) (2024-10-29)
+
+## [3.0.174](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.173...v3.0.174) (2024-10-26)
+
+## [3.0.173](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.172...v3.0.173) (2024-10-26)
+
+## [3.0.172](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.171...v3.0.172) (2024-10-26)
+
+## [3.0.171](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.170...v3.0.171) (2024-10-26)
+
+## [3.0.170](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.169...v3.0.170) (2024-10-26)
+
+## [3.0.169](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.168...v3.0.169) (2024-10-25)
+
+## [3.0.168](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.167...v3.0.168) (2024-10-25)
+
+## [3.0.167](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.166...v3.0.167) (2024-10-24)
+
 ## [3.0.166](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.165...v3.0.166) (2024-10-22)
 
 ## [3.0.165](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.164...v3.0.165) (2024-10-22)
