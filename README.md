@@ -67,6 +67,7 @@ Then we set the background and the text color based on the value being exactly `
 5. Find sheets and enable it.
 6. After save, click "Create Credentials" in the upper right.
 7. Give it a name, leave everything else blank and save
+8. After save, click "Credentials" in the left menu
 9. On the service account details page, click "KEYS" tab
 10. Click Add Key -> JSON
 11. Take the download private key and open it
