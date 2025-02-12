@@ -150,4 +150,9 @@ export default class SheetsReporterGoogleAdapter
 
         return doc
     }
+
+    public async fetchAllWorksheets(sheetId: string) {
+        const spreadsheet = await this.fetchSpreadsheet(sheetId)
+        return Object.values(spreadsheet.sheetsById)
+    }
 }

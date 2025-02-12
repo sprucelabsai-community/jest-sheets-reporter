@@ -35,7 +35,19 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
 
     protected static async afterAll() {
         await super.afterAll()
-        await this.sheetsAdapter.deleteWorksheet(this.sheetId, this.worksheetId)
+        const worksheets = await this.sheetsAdapter.fetchAllWorksheets(
+            this.sheetId
+        )
+
+        for (const worksheet of worksheets) {
+            if (worksheet.sheetId !== '0') {
+                await new Promise((resolve) => setTimeout(resolve, 1000))
+                await this.sheetsAdapter.deleteWorksheet(
+                    this.sheetId,
+                    parseInt(worksheet.sheetId, 10)
+                )
+            }
+        }
     }
 
     @test('can set number value', 100)
