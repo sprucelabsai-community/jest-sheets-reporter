@@ -39,19 +39,15 @@ export default class SheetsAdapterTest extends AbstractSheetsReporterTest {
             this.sheetId
         )
 
+        worksheets.pop()
+
         for (const worksheet of worksheets) {
-            if (worksheet.sheetId !== '0') {
-                await new Promise((resolve) => setTimeout(resolve, 1000))
-                this.log(
-                    'deleting worksheet',
-                    worksheet.sheetId,
-                    worksheet.title
-                )
-                await this.sheetsAdapter.deleteWorksheet(
-                    this.sheetId,
-                    parseInt(worksheet.sheetId, 10)
-                )
-            }
+            await new Promise((resolve) => setTimeout(resolve, 1000))
+            this.log('deleting worksheet', worksheet.sheetId, worksheet.title)
+            await this.sheetsAdapter.deleteWorksheet(
+                this.sheetId,
+                parseInt(worksheet.sheetId, 10)
+            )
         }
     }
 
