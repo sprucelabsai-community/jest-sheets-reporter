@@ -1,3 +1,5 @@
+## [3.0.205](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.204...v3.0.205) (2025-02-12)
+
 ## [3.0.204](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.203...v3.0.204) (2025-02-04)
 
 ## [3.0.203](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v3.0.202...v3.0.203) (2025-01-31)
