@@ -63,7 +63,7 @@
     "@sprucelabs/semantic-release": "^5.0.2",
     "@sprucelabs/test": "^9.0.83",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.15.30",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.28.0",
