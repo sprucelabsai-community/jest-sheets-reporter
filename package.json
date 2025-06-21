@@ -55,12 +55,12 @@
     "build": "yarn run build.tsc --sourceMap ; yarn run resolve-paths"
   },
   "dependencies": {
-    "@sprucelabs/resolve-path-aliases": "^3.0.6",
     "dotenv": "^16.5.0",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
   "devDependencies": {
+    "@sprucelabs/resolve-path-aliases": "^3.0.7",
     "@sprucelabs/semantic-release": "^5.0.2",
     "@sprucelabs/test": "^10.0.5",
     "@types/google-spreadsheet": "^3.3.2",
