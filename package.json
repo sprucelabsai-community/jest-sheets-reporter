@@ -54,7 +54,7 @@
     "watch.tsc": "tsc -w"
   },
   "dependencies": {
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.0",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
