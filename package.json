@@ -54,19 +54,19 @@
     "watch.tsc": "tsc -w"
   },
   "dependencies": {
-    "dotenv": "^17.0.0",
+    "dotenv": "^17.0.1",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
   "devDependencies": {
     "@sprucelabs/resolve-path-aliases": "^3.0.10",
     "@sprucelabs/semantic-release": "^5.0.2",
-    "@sprucelabs/test": "^10.0.8",
+    "@sprucelabs/test": "^10.0.9",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^24.0.7",
+    "@types/node": "^24.0.10",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
-    "eslint": "^9.30.0",
+    "eslint": "^9.30.1",
     "eslint-config-spruce": "^11.2.26",
     "jest": "^30.0.3",
     "jest-reporters": "^0.0.2",
