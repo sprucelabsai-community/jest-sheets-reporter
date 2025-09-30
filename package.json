@@ -54,7 +54,7 @@
     "watch.tsc": "tsc -w"
   },
   "dependencies": {
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "google-spreadsheet": "^3.3.0",
     "retry": "^0.13.1"
   },
@@ -63,7 +63,7 @@
     "@sprucelabs/semantic-release": "^5.0.2",
     "@sprucelabs/test": "^10.0.22",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.6.0",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.36.0",
