@@ -1,3 +1,8 @@
+## <small>4.0.54 (2025-11-08)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([5f4b9a5](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/5f4b9a5))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([c2de8d9](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/c2de8d9))
+
 ## [4.0.53](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v4.0.52...v4.0.53) (2025-11-08)
 
 ## [4.0.52](https://github.com/sprucelabsai-community/jest-sheets-reporter/compare/v4.0.51...v4.0.52) (2025-10-31)
