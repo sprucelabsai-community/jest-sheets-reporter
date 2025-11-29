@@ -1,3 +1,10 @@
+## <small>5.0.8 (2025-11-29)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([3973e07](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/3973e07))
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([615fe56](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/615fe56))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([67547ff](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/67547ff))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([0601896](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/0601896))
+
 ## <small>5.0.7 (2025-11-29)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([0291074](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/0291074))
