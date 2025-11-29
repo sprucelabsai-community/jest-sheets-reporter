@@ -5,9 +5,7 @@ import {
     IGoogleSheetsOptions,
 } from '../sheetsReporter.types'
 
-export default class SheetsReporterGoogleAdapter
-    implements IGoogleSheetsAdapter
-{
+export default class SheetsReporterGoogleAdapter implements IGoogleSheetsAdapter {
     private serviceEmail: string
     private privateKey: string
     private spreadsheetInstancesById: Record<
