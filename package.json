@@ -59,11 +59,11 @@
     "retry": "^0.13.1"
   },
   "devDependencies": {
-    "@sprucelabs/resolve-path-aliases": "^4.0.9",
+    "@sprucelabs/resolve-path-aliases": "^4.0.10",
     "@sprucelabs/semantic-release": "^6.0.0",
     "@sprucelabs/test": "^11.0.4",
     "@types/google-spreadsheet": "^3.3.2",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.0.1",
     "@types/retry": "^0.12.5",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.39.1",
