@@ -1,3 +1,7 @@
+## <small>5.0.15 (2026-01-07)</small>
+
+* patch: upgrade dependencies ([68dac94](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/68dac94))
+
 ## <small>5.0.14 (2026-01-07)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([4656efe](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/4656efe))
