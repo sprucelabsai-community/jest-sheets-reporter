@@ -8,7 +8,7 @@ import {
 } from './sheetsReporter.types'
 import { SheetsReporterUtility } from './SheetsReporterUtility'
 
-require('dotenv').config()
+require('dotenv').config({ quiet: true })
 
 export default class SheetsReporter<TestMap extends ITestMap> {
     private adapter: IGoogleSheetsAdapter

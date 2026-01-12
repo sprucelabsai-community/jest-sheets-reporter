@@ -1,7 +1,7 @@
 import pathUtil from 'path'
 import { IJestTestResult, ITestMap } from './sheetsReporter.types'
 
-require('dotenv').config()
+require('dotenv').config({ quiet: true })
 
 export class SheetsReporterUtility {
     public static getMappedTests(map: ITestMap, results: IJestTestResult[]) {

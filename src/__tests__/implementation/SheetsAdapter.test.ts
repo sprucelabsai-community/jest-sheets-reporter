@@ -2,7 +2,7 @@ import { test, assert } from '@sprucelabs/test'
 import AbstractSheetsReporterTest from '../../AbstractSheetsReporterTest'
 import { IGoogleSheetsAdapter } from '../../sheetsReporter.types'
 import { SheetsReporterUtility } from '../../SheetsReporterUtility'
-require('dotenv').config()
+require('dotenv').config({ quiet: true })
 
 const sheetsAdapterPath = SheetsReporterUtility.resolveAdapterPath(
     process.env.SHEETS_REPORTER_ADAPTER_TEST ?? 'GoogleAdapter'

@@ -4,7 +4,7 @@ import { TEST_JEST_PASSED, TEST_JEST_FAILED } from '../../constants'
 import SheetsReporter from '../../SheetsReporter'
 import { IJestTestResult, ITestMap } from '../../sheetsReporter.types'
 import { SheetsReporterUtility } from '../../SheetsReporterUtility'
-require('dotenv').config()
+require('dotenv').config({ quiet: true })
 
 export default class SheetsReporterTest extends AbstractSheetsReporterTest {
     private static reporter: SheetsReporter<typeof SheetsReporterTest.testMap>
