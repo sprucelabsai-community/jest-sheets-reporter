@@ -1,3 +1,7 @@
+## <small>5.0.16 (2026-01-12)</small>
+
+* Enable dotenv quiet mode to suppress missing .env warnings ([a079608](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/a079608))
+
 ## <small>5.0.15 (2026-01-07)</small>
 
 * patch: upgrade dependencies ([68dac94](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/68dac94))
