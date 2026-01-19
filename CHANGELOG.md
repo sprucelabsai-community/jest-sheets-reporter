@@ -1,3 +1,8 @@
+## <small>5.0.17 (2026-01-19)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([6e6f508](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/6e6f508))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([115e35e](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/115e35e))
+
 ## <small>5.0.16 (2026-01-12)</small>
 
 * Enable dotenv quiet mode to suppress missing .env warnings ([a079608](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/a079608))
