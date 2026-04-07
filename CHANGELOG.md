@@ -1,3 +1,11 @@
+## <small>5.0.24 (2026-04-07)</small>
+
+* Upgrade dependencies and fix TypeScript 6.0 tsconfig deprecations ([838c089](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/838c089))
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([8e79be9](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/8e79be9))
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([e6fb0b7](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/e6fb0b7))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([8971c16](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/8971c16))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([627372a](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/627372a))
+
 ## <small>5.0.23 (2026-02-23)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([7dad50f](https://github.com/sprucelabsai-community/jest-sheets-reporter/commit/7dad50f))
